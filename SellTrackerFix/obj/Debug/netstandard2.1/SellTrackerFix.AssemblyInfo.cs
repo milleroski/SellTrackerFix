@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("A fix for SellTracker.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d933c69d5cad96ab9562b1c4ed8113dd29a6dec4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+368ce02f8d051e09c35674ef38ea099a71038c74")]
 [assembly: System.Reflection.AssemblyProductAttribute("SellTrackerFix")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SellTrackerFix")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -41,7 +41,7 @@ namespace SellTrackerFix
         {
             [HarmonyPrefix]
             [HarmonyPatch("Update")]
-            public static bool OverwriteText(ref DisplayCompanyBuyingRate __instance)
+            public static bool OverwriteText(DisplayCompanyBuyingRate __instance)
             {
                 int num = TimeOfDay.Instance.quotaFulfilled + calculatedValue;
                 ((TMP_Text)__instance.displayText).fontSize = 28f;
@@ -55,7 +55,7 @@ namespace SellTrackerFix
         {
             [HarmonyPostfix]
             [HarmonyPatch("AddObjectToDeskClientRpc")]
-            public static void FetchValue(ref DepositItemsDesk __instance)
+            public static void FetchValue(DepositItemsDesk __instance)
             {
                 // If not the host
                 if (!NetworkManager.Singleton.IsServer && NetworkManager.Singleton.IsClient)
@@ -77,7 +77,7 @@ namespace SellTrackerFix
 
             [HarmonyPostfix]
             [HarmonyPatch("SellItemsClientRpc")]
-            public static void ClearValue(ref DepositItemsDesk __instance)
+            public static void ClearValue(DepositItemsDesk __instance)
             {
                 // If not the host
                 if (!NetworkManager.Singleton.IsServer && NetworkManager.Singleton.IsClient)
